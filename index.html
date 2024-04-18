@@ -1,0 +1,2207 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction-proxies-commands" class="toc-h2 toc-link" data-title="Proxies (Commands)">Proxies (Commands)</a>
+                  </li>
+                  <li>
+                    <a href="#introduction-protocol-notifications" class="toc-h2 toc-link" data-title="Protocol (Notifications)">Protocol (Notifications)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-1" class="toc-h2 toc-link" data-title="What’s New in 3.4.1">What’s New in 3.4.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-0" class="toc-h2 toc-link" data-title="What’s New in 3.4.0">What’s New in 3.4.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-2" class="toc-h2 toc-link" data-title="What’s New in 3.3.2">What’s New in 3.3.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-1" class="toc-h2 toc-link" data-title="What’s New in 3.3.1">What’s New in 3.3.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-0" class="toc-h2 toc-link" data-title="What’s New in 3.3.0">What’s New in 3.3.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-3" class="toc-h2 toc-link" data-title="What’s New in 3.2.3">What’s New in 3.2.3</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-2" class="toc-h2 toc-link" data-title="What’s New in 3.2.2">What’s New in 3.2.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-1" class="toc-h2 toc-link" data-title="What’s New in 3.2.1">What’s New in 3.2.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-0" class="toc-h2 toc-link" data-title="What’s New in 3.2.0">What’s New in 3.2.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-2" class="toc-h2 toc-link" data-title="What was New in 3.1.2">What was New in 3.1.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-0" class="toc-h2 toc-link" data-title="What was New in 3.1.0">What was New in 3.1.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-o-s-3" class="toc-h2 toc-link" data-title="What was New in O.S.3">What was New in O.S.3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-proxy-commands" class="toc-h1 toc-link" data-title="Lock Proxy Commands">Lock Proxy Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-proxy-commands-add_user" class="toc-h2 toc-link" data-title="ADD_USER">ADD_USER</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-close" class="toc-h2 toc-link" data-title="CLOSE">CLOSE</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-delete_user" class="toc-h2 toc-link" data-title="DELETE_USER">DELETE_USER</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-edit_user" class="toc-h2 toc-link" data-title="EDIT_USER">EDIT_USER</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-lock" class="toc-h2 toc-link" data-title="LOCK">LOCK</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-open" class="toc-h2 toc-link" data-title="OPEN">OPEN</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-request_capabilities" class="toc-h2 toc-link" data-title="REQUEST_CAPABILITIES">REQUEST_CAPABILITIES</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-request_custom_settings" class="toc-h2 toc-link" data-title="REQUEST_CUSTOM_SETTINGS">REQUEST_CUSTOM_SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-request_custom_settings" class="toc-h2 toc-link" data-title="REQUEST_CUSTOM_SETTINGS">REQUEST_CUSTOM_SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-request_settings" class="toc-h2 toc-link" data-title="REQUEST_SETTINGS">REQUEST_SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-request_users" class="toc-h2 toc-link" data-title="REQUEST_USERS">REQUEST_USERS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_admn_code" class="toc-h2 toc-link" data-title="SET_ADMN_CODE">SET_ADMN_CODE</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_auto_lock_seconds" class="toc-h2 toc-link" data-title="SET_AUTO_LOCK_SECONDS">SET_AUTO_LOCK_SECONDS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_custom_settings" class="toc-h2 toc-link" data-title="SET_CUSTOM_SETTINGS">SET_CUSTOM_SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_language" class="toc-h2 toc-link" data-title="SET_LANGUAGE">SET_LANGUAGE</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_lock_mode" class="toc-h2 toc-link" data-title="SET_LOCK_MODE">SET_LOCK_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_log_failed_attempts" class="toc-h2 toc-link" data-title="SET_LOG_FAILED_ATTEMPTS">SET_LOG_FAILED_ATTEMPTS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_number_log_items" class="toc-h2 toc-link" data-title="SET_NUMBER_LOG_ITEMS">SET_NUMBER_LOG_ITEMS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_one_touch_locking" class="toc-h2 toc-link" data-title="SET_ONE_TOUCH_LOCKING">SET_ONE_TOUCH_LOCKING</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_scheduled_lockout_enabled" class="toc-h2 toc-link" data-title="SET_SCHEDULED_LOCKOUT_ENABLED">SET_SCHEDULED_LOCKOUT_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_shut_out_timer" class="toc-h2 toc-link" data-title="SET_SHUT_OUT_TIMER">SET_SHUT_OUT_TIMER</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_wrong_code_attempts" class="toc-h2 toc-link" data-title="SET_WRONG_CODE_ATTEMPTS">SET_WRONG_CODE_ATTEMPTS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-set_volume" class="toc-h2 toc-link" data-title="SET_VOLUME">SET_VOLUME</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-toggle" class="toc-h2 toc-link" data-title="TOGGLE">TOGGLE</a>
+                  </li>
+                  <li>
+                    <a href="#lock-proxy-commands-unlock" class="toc-h2 toc-link" data-title="UNLOCK">UNLOCK</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-protocol-notifications" class="toc-h1 toc-link" data-title="Lock Protocol Notifications">Lock Protocol Notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-protocol-notifications-battery_status_changed" class="toc-h2 toc-link" data-title="BATTERY_STATUS_CHANGED">BATTERY_STATUS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-capability_changed" class="toc-h2 toc-link" data-title="CAPABILITY_CHANGED">CAPABILITY_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-history" class="toc-h2 toc-link" data-title="HISTORY">HISTORY</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-custom_settings" class="toc-h2 toc-link" data-title="CUSTOM_SETTINGS">CUSTOM_SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-custom_settings_changed" class="toc-h2 toc-link" data-title="CUSTOM_SETTINGS_CHANGED">CUSTOM_SETTINGS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-lock_status_changed" class="toc-h2 toc-link" data-title="LOCK_STATUS_CHANGED">LOCK_STATUS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-settings" class="toc-h2 toc-link" data-title="SETTINGS">SETTINGS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-settings_changed" class="toc-h2 toc-link" data-title="SETTINGS_CHANGED">SETTINGS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-users" class="toc-h2 toc-link" data-title="USERS">USERS</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-user_added" class="toc-h2 toc-link" data-title="USER_ADDED">USER_ADDED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-user_changed" class="toc-h2 toc-link" data-title="USER_CHANGED">USER_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#lock-protocol-notifications-user_deleted" class="toc-h2 toc-link" data-title="USER_DELETED">USER_DELETED</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-capabilities" class="toc-h1 toc-link" data-title="Lock Capabilities">Lock Capabilities</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-capabilities-lock-capabilities" class="toc-h2 toc-link" data-title="LOCK CAPABILITIES">LOCK CAPABILITIES</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-conditionals" class="toc-h1 toc-link" data-title="Lock Conditionals">Lock Conditionals</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-conditionals-lock-conditionals" class="toc-h2 toc-link" data-title="LOCK CONDITIONALS">LOCK CONDITIONALS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-events" class="toc-h1 toc-link" data-title="Lock Events">Lock Events</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-events-lock-events" class="toc-h2 toc-link" data-title="LOCK EVENTS">LOCK EVENTS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#lock-variables" class="toc-h1 toc-link" data-title="Lock Variables">Lock Variables</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lock-variables-lock-variables" class="toc-h2 toc-link" data-title="LOCK VARIABLES">LOCK VARIABLES</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2023 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+<h1 id='introduction'>Introduction</h1>
+
+<h2 id='introduction-proxies-commands'>Proxies (Commands)</h2>
+
+<p>A proxy driver is an interface to the Control4 system for a set of devices that share common functionality. For instance, most DVD disc changers have common controls such as PLAY, STOP, PAUSE and FAST FORWARD.  The disc changer proxy allows for a common user interface to control all disc changers.  The Control4 system (Director) sends information to and receives information from the proxy drivers.  The proxy drivers send information to and receives information from the protocol drivers.
+Remember, your DriverWorks driver interacts with the proxy driver which then interacts with the system.  As a driver developer you will be relying on this proxy to provide status (notification) to the Control4 system for the device you are controlling.  You will also receive commands from the system that you will act on to control the device.  These commands and notifications are at the heart of what you will be implementing in your driver.  Essentially your driver is becoming the go-between from the Control4 system and your device with the proxy driver giving structure to the commands and notifications which you will be implementing.
+Your driver can facilitate communications with multiple types of proxies for a single device. As an example, a Security System driver will utilize both the Security proxy and the Contacts proxy. These additional proxies are configured in the &lt;connections&gt; section of the .c4z.</p>
+
+<h2 id='introduction-protocol-notifications'>Protocol (Notifications)</h2>
+
+<p>Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.</p>
+<h1 id='what-s-new'>What’s New</h1>
+
+<h2 id='what-s-new-what-s-new-in-3-4-1'>What’s New in 3.4.1</h2>
+
+<p>There were no modifications to the Proxy and Protocol Guide in conjunction with O.S. Release 3.4.1.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-4-0'>What’s New in 3.4.0</h2><h3 id='what-s-new-what-s-new-in-3-4-0-blind-proxy'>Blind Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level">always_send_level</a>. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-camera-proxy'>Camera Proxy</h3>
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution">CODEC</a> and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-generic-media-player-proxy'>Generic Media Player Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing">allow_audio_pathing</a>. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-light-v2-proxy'>Light (v2) Proxy</h3>
+<p>The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: &quot;custom”. See the links below for more information.</p>
+
+<p>RGB functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></p>
+
+<p>HSV functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-2'>What’s New in 3.3.2</h2><h3 id='what-s-new-what-s-new-in-3-3-2-camera-proxy'>Camera Proxy</h3>
+<p><strong>Support for Dynamic Camera Streams</strong></p>
+
+<p>Camera drivers can now implement a new <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">dynamic streams API</a> to provide a list of streams that the Navigators can pick from. </p>
+<h3 id='what-s-new-what-s-new-in-3-3-2-light-v2-proxy'>Light V2 Proxy</h3>
+<p><strong>Capabilities that have been Added</strong></p>
+
+<p>A new feature has been delivered in O.S. 3.3.2 which allows dealers and customers to specify how a light&#39;s brightness behaves when the light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Preset - Light turns on to a preset level.</li>
+<li>Previous - Light turns on to the previous light level.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on-mode_preset">brightness_on_mode_preset</a> has been included to enable the brightness presets for &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on_mode_previous">brightness_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; brightness  behavior for a light.</p>
+
+<p>A new feature was created to allow dealers and customers to specify how a light&#39;s color behaves when a light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Color Fade - Color behavior such as Dim to Warm</li>
+<li>Preset - Color changes to a preset.</li>
+<li>Previous - Color changes to the previous color value.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_fade">color_on_mode_fade</a> has been included to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_preset">color_on_mode_preset</a> has been included to enable presets for use with &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_previous">color_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; behavior for a light.</p>
+
+<p>Additionally,  the following new capabilities have been included in 3.3.2:</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_max">brightness_rate_max</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold maximum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_min">brightness_rate_min</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_brightness_stop">supports_brightness_stop</a> has been included if a light brightness transition can be stopped during a ramp. </p>
+
+<p><strong>Capabilities that have been Deprecated</strong></p>
+
+<p>fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>has_fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>num_buttons</p>
+
+<p>ramp_level</p>
+
+<p>min_max</p>
+
+<p>on_off</p>
+
+<p>buttons_are_virtual</p>
+
+<p><strong>Commands that have been Added</strong></p>
+
+<p>Note: Enforcement of valid minimum and maximum values for many Light v2 commands are being enforced in conjunction with 3.3.2. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-add_driver_color_preset">ADD_DRIVER_COLOR_PRESET</a> has been included to add a new driver specific color preset.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-delete_driver_-color_-preset">DELETE_DRIVER_COLOR_PRESET</a> has been added to remove a driver configured color preset. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_off">DYNAMIC_OFF</a> has been added to support UIs with an off command to pair with the DYNAMIC_ON command.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_on">DYNAMIC_ON</a> has been added to allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-modify_driver_color_preset">MODIFY_DRIVER_COLOR_PRESET</a> has been included to change an existing driver color preset.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_stop">SET_BRIGHTNESS_STOP</a> has been added to stop a ramp if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_stop">SET_COLOR_STOP</a> has been added to stops a ramp of color if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_on_mode">SET_BRIGHTNESS_ON_MODE</a> has been added to maintain the On preset value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">SET_BRIGHTNESS_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_on_mode">SET_COLOR_ON_MODE</a>  has beed added define color on mode.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_rate_default">SET_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">UPDATE_BRIGHTNESS_ON_MODE</a> has been added to obtain how a light should turn on with regards to brightness.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> has been added to provide a default value when a rate change is not provided.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_preset">UPDATE_BRIGHTNESS_PRESET</a> has beeb added to send a command when a press is changed.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_on_mode">UPDATE_COLOR_ON_MODE</a> has been added to obtain how a light should turn on with regards to color.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_preset">UPDATE_COLOR_PRESET</a> has been added to manage On and Dim values across various brands and models of lights.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to update the color rate default value.</p>
+
+<p><strong>Commands that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a> command has been enhanced with new parameters to support hue, saturation and presets. Additionally, this command previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p><strong>Commands that have been Deprecated</strong></p>
+
+<p>GET_LIGHT_LEVEL </p>
+
+<p>GET_CONNECTED_STATE </p>
+
+<p>GET_PROPERTIES </p>
+
+<p><strong>Conditionals that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS_TARGET</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR_TARGET</a> </p>
+
+<p><strong>Notifications that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> notify has been modified to include two new optional parameters: LIGHT_BRIGHTNESS_CURRENT_PRESET_ID and LIGHT_BRIGHTNESS_TARGET_PRESET_ID.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a> notify has been modified to include parameters for Preset IDs. Additionally, this notify previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a> notify has been modified to include a parameter for a Preset ID.</p>
+
+<p><strong>Variables that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Ramp Rate in Milliseconds</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Rate Remaining in Milliseconds</a></p>
+
+<p><strong>Variables that have been Deprecated</strong></p>
+
+<p>PRESET_LEVEL has been deprecated as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">brightness_on_mode_preset</a> capability contains this value. </p>
+
+<p><strong>Known Issue(s)</strong></p>
+
+<p><em>Color Lighting Control may not Work on Some Drivers</em></p>
+
+<p>Currently, there is a known problem with color control not working on drivers that are looking for a RATE parameter in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET </a>command. The RATE parameter was not correctly implemented due to the limits of support for color rate ramping in previous versions. We are finalizing the changes to make this fully work in 3.3.2. As a result, the “RATE” parameter name has been changed to “LIGHT_COLOR_TARGET_RATE”.</p>
+
+<p><em>Button Link Binding for Brightness Stop Functionality not Working</em></p>
+
+<p>A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON_LINK binding for Brightness Stop from working. This will be resolved in 3.3.3.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-1'>What’s New in 3.3.1</h2>
+
+<p><strong>Light V2 Proxy</strong></p>
+
+<p>The capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a> has been modified to accept a Delta value of &gt; .01. When provided, the CIELa*b* tolerance formula is used to determining if a color is the as another color in the system.</p>
+
+<p>The following Conversion Commands have been enhanced to include an optional parameter: gamut. This parameter allows for the specification of a gamut type for use in the conversions.</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></li>
+</ul>
+
+<p><strong>Camera Proxy</strong></p>
+
+<p>The Camera Proxy documentation has been has enhanced to include new information regarding:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Camera Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Driver Support for Multiple Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Support for Caching URLS</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library">Support for The Extras Interface Library</a> </li>
+</ul>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-get_stream_urls">GET_STREAM_URLS</a> has been added. It is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various client</p>
+
+<p>A new notification: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-stream_urls_ready">STREAM_URLS_READY</a> has been added. This notify is used as a follow up to a GET_STREAM_URLS Synchronous call. This Notify will let a UI know that the URL information they requested is ready. </p>
+
+<p>New capabilities added to the Camera proxy include:  </p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-dynamic_urls_use_type">dynamic_urls_use_type</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-requires_dynamic_stream_urls">requires_dynamic_stream_urls</a></li>
+</ul>
+
+<p>Dynamic Presets are now supported within the Camera Proxy.  The following preset functionality has been include: </p>
+
+<ul>
+<li>Save new presets.</li>
+<li>Change preset name.</li>
+<li>Recapture/update existing preset.</li>
+<li>Reorder presets.</li>
+<li>Delete a preset.</li>
+</ul>
+
+<p>Dynamic Presets require the following new Capability:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_dynamic_presets">has_dynamic_presets</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Notifications:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-dynamic_urls_changed">DYNAMIC_URLS_CHANGED</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Commands:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-select_preset">SELECT_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_name">CHANGE_PRESET_NAME</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-modify_preset">MODIFY_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-delete_preset">DELETE_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_order">CHANGE_PRESET_ORDER</a></li>
+</ul>
+
+<p>The following existing Camera Proxy capabilities are now Dynamic Capabilities:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_-pan">has_pan</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_tilt">has_tilt</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_zoom">has_zoom</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_home">has_home</a></li>
+</ul>
+
+<h2 id='what-s-new-what-s-new-in-3-3-0'>What’s New in 3.3.0</h2><h3 id='what-s-new-what-s-new-in-3-3-0-light-proxy-color-enhancements'>Light Proxy Color Enhancements</h3>
+<p>This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-capabilities'>Light V2 Proxy Capabilities</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_max">color_correlated_temperature_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_min">color_correlated_temperature_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_behavior">color_rate_behavior</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_max">color_rate_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_min">color_rate_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color">supports_color</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color_correlated_temperature">supports_color_correlated_temperature</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-commands'>Light V2 Proxy Commands</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conversion-commands'>Light V2 Proxy Conversion Commands</h3>
+<p>This section lists the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands">Commands</a> used for converting to/from hue, saturation and lightness (HSV) and red, blue and green (RGB).</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conditionals'>Light V2 Proxy Conditionals</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-protocol-notifications'>Light v2 Protocol Notifications</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-events'>Light V2 Proxy Events</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changed</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changing</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-extras'>Light V2 Proxy Extras</h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-advanced-lighting-scene-agent'>Advanced Lighting Scene Agent </h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-driver-development-best-practices'>Light Driver Development Best Practices</h3>
+<p>A new section has been added to the Light V2 proxy content including <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices">best practice recommendations</a> for light driver developers.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-audio-video-switch-display-adjustable-bindings'>Audio Video Switch Display Adjustable Bindings</h3>
+<p>O.S. releases 3.3.0 provides the ability to hide <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings">AV Switch Bindings</a> that are not being used. This feature has been provided to better manage the UI display within ComposerPro.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-3'>What’s New in 3.2.3</h2>
+
+<p><strong>Audio Equalization available on Navigators</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq">Amplifier</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq">AV Switch</a> Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.</p>
+
+<p><strong>Dynamic Transport Controls on Navigators</strong></p>
+
+<p>Audio Video drivers now have the ability to define which <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator">transport controls</a> are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-2'>What’s New in 3.2.2</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.2.</em></p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-1'>What’s New in 3.2.1</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.1.</em></p>
+
+<p><h2 id='what-s-new-what-s-new-in-3-2-0'>What’s New in 3.2.0</h2><h3 id='what-s-new-what-s-new-in-3-2-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Security Proxy</strong>
+The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications-request_default_user_code_">REQUEST_DEFAULT_USER_CODE</a> partition notification was added as a mechanism for the protocol driver
+to initiate the communication to get that default user code upon driver update.</p></p>
+
+<p>The following Security Protocol Notifications were deprecated from the SDK: ALARM, ALARM_CLEAR, AWAY, DISARM, HOME, TROUBLE. Please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications">Security Panel Notification</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications">Security Partition Notification</a> areas for the latest list of Notifies.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-2'>What was New in 3.1.2</h2><h3 id='what-s-new-what-was-new-in-3-1-2-proxies-that-were-deprecated'>Proxies that were Deprecated** </h3>
+<p>The following Proxies were deprecated from the Proxy and Protocol Guide:</p></p>
+
+<ul>
+<li>iPod</li>
+<li>Load Controller</li>
+</ul>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-0'>What was New in 3.1.0</h2><h3 id='what-s-new-what-was-new-in-3-1-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Light V2 Proxy</strong>
+light sample.c4i - A sample driver has been included to assist with better understanding the basic flow of commands from the Light Proxy as well as receiving protocol notifications. The driver can be found in the Samples directory under the root level of the DriverWorks SDK.zip file</p></p>
+
+<p><strong>Media Service Proxy</strong>
+Detail Screen Type - Information regarding the implementation of the Detail Type Screen has been added to the documentation.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-o-s-3'>What was New in O.S.3</h2><h3 id='what-s-new-what-was-new-in-o-s-3-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>KeyPad Proxy</strong></p></p>
+
+<p>New Button Linking functionality has been added to the Proxy. Button Linking supports the ability of a driver interacting with a second driver using Button State and Button LED State. </p>
+
+<p><strong>Light (V2) Proxy</strong>
+LightV2 Proxy has been significantly enhanced in this release. It is recommended that Light Driver writers thoroughly review the Proxy content in this release. The changes included not only impact drivers written against OS 3. Previously delivered Light Proxy elements have been modified or in some cases deprecated. </p>
+
+<p>In OS 3, the proxy has been conceptually split into two components. The first being a Wall Control/Keypad portion and the second is a redesigned Light portion.The Light portion has been developed as a Bulb Library. The ultimate goal of the Bulb Library is to support ,more versatility for drivers to interrogate, group, control and manage individual drivers and bulbs. Bulb color, target level, minimum and maximum levels, cold start timing and other features are implemented in the Bulb Library. Dynamic Capabilities have also been added to the Light Portion. Note that all changes maintain backwards compatibility for driver side interaction. However, Navigators will have functionality deprecated due to performance reasons or improved ways of communicating with the driver.</p>
+
+<p><strong>Media Service Proxy</strong>
+Favoriting: In conjunction with the ability to &quot;Favorite&quot; Navigator UI screens in OS 3, drivers written using the Media Service Proxy can now provide the ability for end users to designate favorite media delivered through an Media Service Proxy driver such as Playlists, Albums, Tracks, Stations, Movies, TV Shows, etc. </p>
+
+<p>DashboardChanged Event: The DashboardChanged event now includes content on the use of custom icons and actions.</p>
+
+<p>Driver Notification Context Example: New code examples on have been added to the Media Service Proxy Driver Notification Prototype section in the Appendix.</p>
+
+<p><strong> Best Practices</strong>
+A new section called Best Practices has been added to the Proxy and Protocol Guide. This section contains information regarding the use cases that fall outside of the typical Proxy/Protocol driver implementation. This release contains Best Practice content on the following:</p>
+
+<p>Using the new Proxy-less command UPDATE PROPERTY. This is a non proxy-specific function that can be called from any device to change a property of any other device.</p>
+
+<p>OS 3 Navigator UI and Volume Control - Managing Volume Commands in conjunction with the use of OS 3&#39;s new volume control slider on the Control4 UI.</p>
+<h1 id='lock-proxy-commands'>Lock Proxy Commands</h1>
+
+<h2 id='lock-proxy-commands-add_user'>ADD_USER</h2>
+
+<p>Adds a user.</p>
+
+<h3 id='lock-proxy-commands-add_user-signature'>Signature</h3>
+
+<p><code>ADD_USER ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>str</td>
+<td>USER NAME</td>
+</tr>
+<tr>
+<td>str</td>
+<td>PASSCODE</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS ACTIVE: Optional, true</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START DAY:  1-31.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START MONTH: 1-12.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START YEAR:  YYYY.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>END DAY: 1-31</td>
+</tr>
+<tr>
+<td>int</td>
+<td>END MONTH:  1-12.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>END YEAR:  YYYY.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START TIME:  optional, minutes from midnight.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>END TIME: optional, minutes from midnight.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>SCHEDULE TYPE: Optional. daily</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-add_user-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-close'>CLOSE</h2>
+
+<p>Lock if status is unlocked. Called by bound relay.</p>
+
+<h3 id='lock-proxy-commands-close-name'>Name</h3>
+
+<p><code>CLOSE ()</code></p>
+
+<h3 id='lock-proxy-commands-close-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-close-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-delete_user'>DELETE_USER</h2>
+
+<p>Deletes a user.</p>
+
+<h3 id='lock-proxy-commands-delete_user-name'>Name</h3>
+
+<p><code>DELETE_USER ()</code></p>
+
+<h3 id='lock-proxy-commands-delete_user-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-delete_user-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-edit_user'>EDIT_USER</h2>
+
+<p>Edits the user&#39;s schedule and status.</p>
+
+<h3 id='lock-proxy-commands-edit_user-name'>Name</h3>
+
+<p><code>ADD_USER ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th style="text-align: left"></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>int</td>
+<td>USER ID</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>USER NAME</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>PASSCODE</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-edit_user-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-lock'>LOCK</h2>
+
+<p>Lock if status is unlocked. </p>
+
+<h3 id='lock-proxy-commands-lock-name'>Name</h3>
+
+<p><code>LOCK ()</code></p>
+
+<h3 id='lock-proxy-commands-lock-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-lock-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-open'>OPEN</h2>
+
+<p>Unlock if status is unlocked. Called by bound relay.</p>
+
+<h3 id='lock-proxy-commands-open-name'>Name</h3>
+
+<p><code>OPEN ()</code></p>
+
+<h3 id='lock-proxy-commands-open-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-open-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-request_capabilities'>REQUEST_CAPABILITIES</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-capability_changed"><code>CAPABILITY_CHANGED</code></a>being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-request_capabilities-name'>Name</h3>
+
+<p><code>REQUEST_CAPABILITIES ()</code></p>
+
+<h3 id='lock-proxy-commands-request_capabilities-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-request_capabilities-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-request_custom_settings'>REQUEST_CUSTOM_SETTINGS</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-name'>Name</h3>
+
+<p><code>REQUEST_CUSTOM_SETTINGS ()</code></p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-request_custom_settings'>REQUEST_CUSTOM_SETTINGS</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-name'>Name</h3>
+
+<p><code>REQUEST_HISTORY ()</code></p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-request_custom_settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-request_settings'>REQUEST_SETTINGS</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-request_settings-name'>Name</h3>
+
+<p><code>REQUEST_SETTINGS ()</code></p>
+
+<h3 id='lock-proxy-commands-request_settings-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-request_settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-request_users'>REQUEST_USERS</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-request_users-name'>Name</h3>
+
+<p><code>REQUEST_USERS ()</code></p>
+
+<h3 id='lock-proxy-commands-request_users-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-request_users-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_admn_code'>SET_ADMN_CODE</h2>
+
+<p>Set the lock&#39;s administrator code.</p>
+
+<h3 id='lock-proxy-commands-set_admn_code-name'>Name</h3>
+
+<p><code>PSET_ADMIN_CODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PASSCODE</td>
+<td>STR</td>
+<td>Admin code</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_admn_code-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_auto_lock_seconds'>SET_AUTO_LOCK_SECONDS</h2>
+
+<p>Set the number of seconds to wait before locking automatically after unlocked. A value of 0 means do not auto lock. Range determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_auto_lock_seconds-name'>Name</h3>
+
+<p><code>SET_AUTO_LOCK_SECONDS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>SECONDS</td>
+<td>NUM</td>
+<td>Number of seconds</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_auto_lock_seconds-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_custom_settings'>SET_CUSTOM_SETTINGS</h2>
+
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+
+<h3 id='lock-proxy-commands-set_custom_settings-name'>Name</h3>
+
+<p><code>SET_CUSTOM_SETTINGS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NAME</td>
+<td>STR</td>
+<td>Required.</td>
+</tr>
+<tr>
+<td>VALUE</td>
+<td>STR</td>
+<td>Required. Value type must be converted based on custom setting type.</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_custom_settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_language'>SET_LANGUAGE</h2>
+
+<p>Set the lock&#39;s language. Values determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_language-name'>Name</h3>
+
+<p><code>SET_ LANGUAGE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LANGUAGE</td>
+<td>STR</td>
+<td>Lock language.</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_language-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_lock_mode'>SET_LOCK_MODE</h2>
+
+<p>Set the lock’s mode. The supported modes are determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_lock_mode-name'>Name</h3>
+
+<p><code>SET_ LOCK_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MODE</td>
+<td>STR</td>
+<td style="text-align: left">MODE: Required: normal, vacation</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_lock_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_log_failed_attempts'>SET_LOG_FAILED_ATTEMPTS</h2>
+
+<p>For lock’s that have internal log storage, sets whether or not to log failed attempts.</p>
+
+<h3 id='lock-proxy-commands-set_log_failed_attempts-name'>Name</h3>
+
+<p><code>SET_LOG_FAILED_ATTEMPTS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_log_failed_attempts-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_number_log_items'>SET_NUMBER_LOG_ITEMS</h2>
+
+<p>For locks that have internal log storage, set the maximum number of log items to store. Range determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_number_log_items-name'>Name</h3>
+
+<p><code>SET_NUMBER_LOG_ITEMS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>unit</td>
+<td>NUM</td>
+<td>Log count</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_number_log_items-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_one_touch_locking'>SET_ONE_TOUCH_LOCKING</h2>
+
+<p>Set whether or not keypad activation will extend bolt if unlocked.</p>
+
+<h3 id='lock-proxy-commands-set_one_touch_locking-name'>Name</h3>
+
+<p><code>SET_ONE_TOUCH_LOCKING ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_one_touch_locking-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_scheduled_lockout_enabled'>SET_SCHEDULED_LOCKOUT_ENABLED</h2>
+
+<p>Disable or enable all user passcode access.</p>
+
+<h3 id='lock-proxy-commands-set_scheduled_lockout_enabled-name'>Name</h3>
+
+<p><code>SET_SCHEDULED_LOCKOUT_ENABLED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_scheduled_lockout_enabled-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_shut_out_timer'>SET_SHUT_OUT_TIMER</h2>
+
+<p>Set the number of seconds to wait after wrong code attempts has been reached. Range determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_shut_out_timer-name'>Name</h3>
+
+<p><code>SET_SHUT_OUT_TIMER ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>unit</td>
+<td>SECONDS</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_shut_out_timer-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_wrong_code_attempts'>SET_WRONG_CODE_ATTEMPTS</h2>
+
+<p>Set the number of failed passcode attempts before users are temporarily shut out. Range determined by capabilities.</p>
+
+<h3 id='lock-proxy-commands-set_wrong_code_attempts-name'>Name</h3>
+
+<p><code>SET_WRONG_CODE_ATTEMPTS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>unit</td>
+<td>COUNT</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_wrong_code_attempts-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-set_volume'>SET_VOLUME</h2>
+
+<p>Sets the lock’s volume.</p>
+
+<h3 id='lock-proxy-commands-set_volume-name'>Name</h3>
+
+<p><code>SET_VOLUME ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>str</td>
+<td>high/low/silent</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-proxy-commands-set_volume-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-toggle'>TOGGLE</h2>
+
+<p>Toggle the state of the lock. If the lock status is unknown or default, the resulting status is indeterminable</p>
+
+<h3 id='lock-proxy-commands-toggle-name'>Name</h3>
+
+<p><code>TOGGLE ()</code></p>
+
+<h3 id='lock-proxy-commands-toggle-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-toggle-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-proxy-commands-unlock'>UNLOCK</h2>
+
+<p>Unlock if status is locked.</p>
+
+<h3 id='lock-proxy-commands-unlock-signature'>Signature</h3>
+
+<p><code>UNLOCK ()</code></p>
+
+<h3 id='lock-proxy-commands-unlock-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-proxy-commands-unlock-returns'>Returns</h3>
+
+<p><code>None</code></p>
+<h1 id='lock-protocol-notifications'>Lock Protocol Notifications</h1>
+
+<h2 id='lock-protocol-notifications-battery_status_changed'>BATTERY_STATUS_CHANGED</h2>
+
+<p>Sent when battery status changed.</p>
+
+<h3 id='lock-protocol-notifications-battery_status_changed-name'>Name</h3>
+
+<p><code>BATTERY_STATUS_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BATTERY STATUS</td>
+<td>STR</td>
+<td>Required parameter: normal, warning, or critical. Fires Events: BatteryNormal, BatteryWarning, BatteryCritical.</td>
+</tr>
+</tbody></table>
+
+<h2 id='lock-protocol-notifications-capability_changed'>CAPABILITY_CHANGED</h2>
+
+<p>Sent when a capability changes; or when requested by the protocol driver command <code>REQUEST_CAPABILITES</code>, and a capability has changed from what is defined in the driver capabilities XML</p>
+
+<h3 id='lock-protocol-notifications-capability_changed-name'>Name</h3>
+
+<p><code>CAPABILITY_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NAME</td>
+<td>STR</td>
+<td>Required parameter: The name of the setting is its XML tag as defined in <code>&lt;lock_setup&gt;</code>.</td>
+</tr>
+<tr>
+<td>VALUE</td>
+<td>STR</td>
+<td>Required parameter: The capabilities new value.</td>
+</tr>
+</tbody></table>
+
+<h2 id='lock-protocol-notifications-history'>HISTORY</h2>
+
+<p>Sent in response to the command <code>REQUEST_HISTORY</code>.</p>
+
+<h3 id='lock-protocol-notifications-history-name'>Name</h3>
+
+<p><code>HISTORY ()</code></p>
+
+<h3 id='lock-protocol-notifications-history-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-history-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-history-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">lock_history</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">history_item</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">history_id</span><span class="o">&gt;</span><span class="n">history</span><span class="o">-</span><span class="n">ID</span> <span class="n">INT</span><span class="o">&lt;/</span><span class="n">history_id</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">date</span><span class="o">&gt;</span><span class="n">date</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">date</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">time</span><span class="o">&gt;</span><span class="n">time</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">time</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">message</span><span class="o">&gt;</span><span class="n">message</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">message</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">source</span><span class="o">&gt;</span><span class="n">source</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">source</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">history_item</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">lock_history</span><span class="o">&gt;</span>
+</code></pre></div>
+<h2 id='lock-protocol-notifications-custom_settings'>CUSTOM_SETTINGS</h2>
+<p>Sent in response to the command <code>REQUEST_CUSTOM_SETTINGS</code>.</p>
+<h3 id='lock-protocol-notifications-custom_settings-name'>Name</h3>
+
+<p><code>CUSTOM_SETTINGS ()</code></p>
+
+<h3 id='lock-protocol-notifications-custom_settings-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-custom_settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-custom_settings-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">lock_custom_settings</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">custom_setting</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">name</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="n">STRING</span><span class="p">,</span><span class="n">LIST</span><span class="p">,</span><span class="n">RANGED_INTEGER</span><span class="p">,</span><span class="n">RANGED_FLOAT</span><span class="p">,</span><span class="n">BOOLEAN</span><span class="o">&lt;/</span><span class="nb">type</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">mode</span><span class="o">&gt;</span> <span class="n">alpha</span><span class="err">|</span><span class="n">alpha</span><span class="o">-</span><span class="n">numeric</span><span class="err">|</span><span class="n">password</span><span class="o">&lt;/</span><span class="n">mode</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">items</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">item</span><span class="o">&gt;</span><span class="n">item</span><span class="o">&lt;/</span><span class="n">item</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">item</span><span class="o">&gt;</span><span class="n">item</span><span class="o">&lt;/</span><span class="n">item</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">items</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">minimum</span><span class="o">&gt;</span><span class="n">min</span><span class="o">&lt;/</span><span class="n">minimum</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">maximum</span><span class="o">&gt;</span><span class="n">max</span><span class="o">&lt;/</span><span class="n">maximum</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span><span class="n">value</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">custom_setting</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">lock_custom_settings</span><span class="o">&gt;</span>
+</code></pre></div>
+<h2 id='lock-protocol-notifications-custom_settings_changed'>CUSTOM_SETTINGS_CHANGED</h2>
+<p>Sent in when a custom setting changes</p>
+<h3 id='lock-protocol-notifications-custom_settings_changed-name'>Name</h3>
+
+<p><code>CUSTOM_SETTINGS_CHANGED ()</code></p>
+
+<h3 id='lock-protocol-notifications-custom_settings_changed-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-custom_settings_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-lock_status_changed'>LOCK_STATUS_CHANGED</h2>
+
+<p>Sent in when a lock status changes for any reason.</p>
+
+<h3 id='lock-protocol-notifications-lock_status_changed-name'>Name</h3>
+
+<p><code>LOCK_STAUS_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LOCK STATUS</td>
+<td>STR</td>
+<td style="text-align: left">Required parameter: unknown, locked, unlocked, or fault.</td>
+</tr>
+<tr>
+<td>LAST ACTION DESCRIPTION</td>
+<td>STR</td>
+<td style="text-align: left">Optional parameter.</td>
+</tr>
+<tr>
+<td>SOURCE</td>
+<td>STR</td>
+<td style="text-align: left">Optional parameter: the source that affected the status change.</td>
+</tr>
+<tr>
+<td>MANUAL</td>
+<td>BOOL</td>
+<td style="text-align: left">Optional parameter: true, false, assumed false if not specified.</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-protocol-notifications-lock_status_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-settings'>SETTINGS</h2>
+
+<p>Sent in response to the command <code>REQUEST_SETTINGS</code>.</p>
+
+<h3 id='lock-protocol-notifications-settings-name'>Name</h3>
+
+<p><code>SETTINGS ()</code></p>
+
+<h3 id='lock-protocol-notifications-settings-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-settings-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-settings-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">lock_settings</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">admin_code</span><span class="o">&gt;</span><span class="n">admin</span><span class="o">-</span><span class="n">code</span> <span class="n">STRING</span><span class="o">&lt;/</span><span class="n">admin_code</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">auto_lock_time</span><span class="o">&gt;</span><span class="n">nINT</span><span class="o">&lt;/</span><span class="n">auto_lock_time</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">log_item_count</span><span class="o">&gt;</span><span class="n">nINT</span> <span class="o">&lt;/</span><span class="n">log_item_count</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">schedule_lockout_enabled</span><span class="o">&gt;</span><span class="kc">true</span><span class="err">|</span><span class="kc">false</span><span class="o">&lt;/</span><span class="n">schedule_lockout_enabled</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">lock_mode</span><span class="o">&gt;</span> <span class="n">normal</span><span class="err">|</span><span class="n">vacation</span><span class="err">|</span><span class="n">privacy</span><span class="o">&lt;/</span><span class="n">lock_mode</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">log_failed_attempts</span><span class="o">&gt;</span><span class="kc">true</span><span class="err">|</span><span class="kc">false</span><span class="o">&lt;/</span><span class="n">log_failed_attempts</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">wrong_code_attempts</span><span class="o">&gt;</span><span class="n">nINT</span><span class="o">&lt;/</span><span class="n">wrong_code_attempts</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">shutout_timer</span><span class="o">&gt;</span><span class="n">nINT</span><span class="o">&lt;/</span><span class="n">shutout_timer</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">language</span><span class="o">&gt;</span><span class="n">English</span><span class="err">|</span><span class="n">French</span><span class="err">|</span><span class="n">Spanish</span><span class="err">|</span><span class="n">etc</span><span class="o">&lt;/</span><span class="n">language</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">volume</span><span class="o">&gt;</span><span class="n">silent</span><span class="err">|</span><span class="n">low</span><span class="err">|</span><span class="n">high</span><span class="o">&lt;/</span><span class="n">volume</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">one_touch_locking</span><span class="o">&gt;</span><span class="kc">true</span><span class="err">|</span><span class="kc">false</span><span class="o">&lt;/</span><span class="n">one_touch_locking</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">lock_settings</span><span class="o">&gt;</span>
+</code></pre></div>
+<h2 id='lock-protocol-notifications-settings_changed'>SETTINGS_CHANGED</h2>
+<p>Sent when a setting changes.</p>
+<h3 id='lock-protocol-notifications-settings_changed-name'>Name</h3>
+
+<p><code>SETTINGS_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>str</td>
+<td>Required parameter. The name of the setting is its XML tag as defined in <code>&lt;lock_settings&gt;’</code></td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-protocol-notifications-settings_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-users'>USERS</h2>
+
+<p>Sent in response to the command <code>REQUEST_HISTORY</code>.</p>
+
+<h3 id='lock-protocol-notifications-users-name'>Name</h3>
+
+<p><code>USERS ()</code></p>
+
+<h3 id='lock-protocol-notifications-users-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='lock-protocol-notifications-users-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-user_added'>USER_ADDED</h2>
+
+<p>Sent when a user is added.</p>
+
+<h3 id='lock-protocol-notifications-user_added-name'>Name</h3>
+
+<p><code>USER_ADDED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th style="text-align: left"></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>int</td>
+<td>USER ID</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>USER NAME</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>PASSCODE</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-protocol-notifications-user_added-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-user_changed'>USER_CHANGED</h2>
+
+<p>Sent when a user setting is changed.</p>
+
+<h3 id='lock-protocol-notifications-user_changed-name'>Name</h3>
+
+<p><code>USER_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th style="text-align: left"></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>int</td>
+<td>USER ID</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>USER NAME</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>PASSCODE</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>int</td>
+<td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-protocol-notifications-user_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='lock-protocol-notifications-user_deleted'>USER_DELETED</h2>
+
+<p>Sent when a user setting is deleted.</p>
+
+<h3 id='lock-protocol-notifications-user_deleted-name'>Name</h3>
+
+<p><code>USER_DELETED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>USER ID</td>
+<td>INT</td>
+<td>User ID</td>
+</tr>
+<tr>
+<td>USER NAME</td>
+<td>STR</td>
+<td>User Name</td>
+</tr>
+</tbody></table>
+
+<h3 id='lock-protocol-notifications-user_deleted-returns'>Returns</h3>
+
+<p><code>None</code></p>
+<h1 id='lock-capabilities'>Lock Capabilities</h1>
+
+<h2 id='lock-capabilities-lock-capabilities'>LOCK CAPABILITIES</h2>
+
+<p>The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators.</p>
+
+<p>The correct way to update these capabilities when a driver is updated is with the DYNAMIC_CAPABILITY_CHANGED notification. For example see the lua code to the right which uses name/value pairs:</p>
+
+<p><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_values&#39;, VALUE = &#39;10, 30&#39; } , &#39;NOTIFY&#39;)</p>
+
+<p>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_display_values&#39;, VALUE = &#39;10s, 30s&#39; }, &#39;NOTIFY&#39;) 
+</code></pre></div><h3 id='lock-capabilities-lock-capabilities-capabilities'>Capabilities</h3>
+<p><code>&lt;auto_lock_time_display_values&gt;&lt;/auto_lock_time_display_values&gt;</code></p></p>
+
+<p>Comma delimited list of correlating display values: str</p>
+
+<p><code>&lt;auto_lock_time_values&gt;&lt;/auto_lock_time_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
+
+<p><code>&lt;has_admin_code&gt;&lt;/has_admin_code&gt;</code></p>
+
+<p>Defines whether the lock has an admin code that must be entered to access lock management.  true|false</p>
+
+<p><code>&lt;has_auto_lock_time&gt;&lt;/has_auto_lock_time&gt;</code></p>
+
+<p>Defines whether a lock has an auto lock setting. A lock can auto lock after a set amount of time or not auto lock if time set to 0 – OFF: true|false</p>
+
+<p><code>&lt;has_custom_settings&gt;&lt;/has_custom_settings&gt;</code></p>
+
+<p>Defines whether the lock supports any custom settings that should be added to the list of standard proxy defined settings. See <code>lock_custom_settings</code> data-to-ui:  true|false</p>
+
+<p><code>&lt;has_date_range_schedule&gt;&lt;/has_date_range_schedule&gt;</code></p>
+
+<p>Defines whether the lock supports a date range schedule for users:  true|false</p>
+
+<p><code>&lt;has_daily_schedule&gt;&lt;/has_daily_schedule&gt;</code></p>
+
+<p>Defines whether the lock supports a daily schedule for users:  true|false</p>
+
+<p><code>&lt;has_internal_history&gt;&lt;/has_internal_history&gt;</code></p>
+
+<p>Defines whether the lock maintains its own list of log / history items:  true|false</p>
+
+<p><code>&lt;has_language&gt;&lt;/has_language&gt;</code></p>
+
+<p>Defines whether the lock has a setting for different languages:  true|false</p>
+
+<p><code>&lt;has_log_item_count&gt;&lt;/has_log_item_count&gt;</code></p>
+
+<p>Defines whether a lock has a setting for the number of log items to store for internal logging/history:  true|false</p>
+
+<p><code>&lt;has_log_failed_attempts&gt;&lt;/has_log_failed_attempts&gt;</code></p>
+
+<p>Defines whether a lock has a setting for logging failed keypad unlock attempts:  true|false</p>
+
+<p><code>&lt;has_lock_modes&gt;&lt;/has_lock_modes&gt;</code></p>
+
+<p>Defines whether the lock has a setting for different modes. Vacation mode prevents users from opening a lock using the keypad. Privacy mode prevents users from opening a lock using the keypad. However, if a key is used during privacy mode the lock resets to normal mode. Not all modes have to be supported.  true|false</p>
+
+<p><code>&lt;has_one_touch_locking&gt;&lt;/has_one_touch_locking&gt;</code></p>
+
+<p>Defines whether the lock has a setting to allow one touch locking at the keypad without entering full key code:  true|false</p>
+
+<p><code>&lt;has_schedule_lockout&gt;&lt;/has_schedule_lockout&gt;</code></p>
+
+<p>Defines whether a lock has a schedule lockout setting. The schedule lockout can be used to prevent all users from manually unlocking a lock using the lock&#39;s keypad. This is similar to privacy mode:  true|false</p>
+
+<p><code>&lt;has_settings&gt;&lt;/has_settings&gt;</code></p>
+
+<p>Defines whether the lock supports any settings:  true|false</p>
+
+<p><code>&lt;has_shutout_timer&gt;&lt;/has_shutout_timer&gt;</code></p>
+
+<p>Defines whether the lock has a setting for how long to disable lock keypad after failed attempts:  true|false</p>
+
+<p><code>&lt;has_volume&gt;&lt;/has_volume&gt;</code></p>
+
+<p>Defines whether the lock has a setting for volume:  true|false</p>
+
+<p><code>&lt;has_wrong_code_attempts&lt;/has_wrong_code_attempts&gt;</code></p>
+
+<p>Defines whether the lock has a setting for the number of failed unlock attempts to allow before temporarily disabling the lock: true|false</p>
+
+<p><code>&lt;is_management_only&gt;&lt;/is_management_only&gt;</code></p>
+
+<p>Defines whether the lock is only used for managing users A lock that is management only does not support the LOCK, UNLOCK, and TOGGLE commands:  true|false</p>
+
+<p><code>&lt;language_values&gt;&lt;/language_values&gt;</code></p>
+
+<p>English, French, Spanish …:  str</p>
+
+<p><code>&lt;lock_modes_values&gt;&lt;/lock_modes_values&gt;</code></p>
+
+<p>normal, vacation, privacy: str</p>
+
+<p><code>&lt;log_item_count_values&gt;&lt;/log_item_count_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
+
+<p><code>&lt;max_users&gt;&lt;/max_users&gt;</code></p>
+
+<p>The maximum number of user that can be added to a lock: int</p>
+
+<p><code>&lt;shutout_timer_display_values&gt;&lt;/shutout_timer_display_values&gt;</code></p>
+
+<p>Comma delimited list of correlating display values: str</p>
+
+<p><code>&lt;shutout_timer_values&gt;&lt;/shutout_timer_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
+
+<p><code>&lt;wrong_code_attempts_values&gt; &lt;/wrong_code_attempts_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
+<h1 id='lock-conditionals'>Lock Conditionals</h1>
+
+<h2 id='lock-conditionals-lock-conditionals'>LOCK CONDITIONALS</h2>
+
+<p>The Lock Proxy supports the following conditionals:</p>
+
+<p><code>IS_LOCKED</code></p>
+
+<p><code>IS_UNKNOWN</code></p>
+
+<p><code>IS_UNLOCKED</code></p>
+
+<p><code>IS_FAULT</code></p>
+
+<p><code>IS_BATTERY_NORMAL</code></p>
+
+<p><code>IS_BATTERY_WARNING</code></p>
+
+<p><code>IS_BATTERY_CRITICAL</code></p>
+<h1 id='lock-events'>Lock Events</h1>
+
+<h2 id='lock-events-lock-events'>LOCK EVENTS</h2>
+
+<p>The Lock Proxy fires the following events:</p>
+
+<p>Locked (1) – UI, keypad or deadbolt.</p>
+
+<p>Unlocked (2) – UI, keypad or deadbolt.</p>
+
+<p>LockedManually (3) – Keypad or deadbolt.</p>
+
+<p>UnlockedManually (4) – Keypad or deadbolt.</p>
+
+<p>LockedProxy (5) - Locked via the Proxy.</p>
+
+<p>UnlockedProxy (6) - Unlocked via the proxy.</p>
+
+<p>Fault (7) -Door/Lock Jam Event. Battery too low.</p>
+
+<p>BatteryNormal (8) - Battery state change from Normal.</p>
+
+<p>BatteryWarning (9) - Battery state change from Warning.</p>
+
+<p>BatteryCritical (10) - Battery state change from Critical.</p>
+<h1 id='lock-variables'>Lock Variables</h1>
+
+<h2 id='lock-variables-lock-variables'>LOCK VARIABLES</h2>
+
+<p>The Lock Proxy supports the following variables:</p>
+
+<p>LockStatus (1000) – STRING: unknown, locked, unlocked, fault</p>
+
+<p>BatteryStatus (1001) – STRING: normal, warning, critical</p>
+
+<p>LastActionDescription (1002) - STRING: Description of the last action for the lock. For example: &quot;User opened Lock.&quot; &quot;Lock was Toggled.&quot;</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
