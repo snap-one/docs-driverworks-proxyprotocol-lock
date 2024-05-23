@@ -1,2 +1,3 @@
-# docs-driverworks-proxyprotocol-lock
- Lock Proxy SDK documentation
+# Driverworks Proxy/Protocol Guide - lock
+
+Lock Proxy SDK documentation
