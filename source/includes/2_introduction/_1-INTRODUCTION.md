@@ -1,3 +1,4 @@
+This documentation includes content that details the functions that make up the Lock Control Proxy which is supported in the DriverWorks Software Development Kit.
 
 ## Proxies (Commands)
 
